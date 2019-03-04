@@ -35,7 +35,7 @@ method overriding
 cth final
 ------------------------
 
-class KiraGaj-kira()
+class KiraGaji-kira()
 
 AzmanGaji extends KiraGaji
 -kira()

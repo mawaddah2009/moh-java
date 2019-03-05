@@ -10,6 +10,7 @@ public class Book {
     String title;
     
     public void info(){
+        
     }
     
     public static void cetak(){

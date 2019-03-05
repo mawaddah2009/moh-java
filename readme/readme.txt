@@ -1,8 +1,26 @@
+4/3/2019
+
 1. download JDK dari oracle website
 2.install ke c:\program files\java\jdk..
 3.set environment variable point ke c:\program files\java\jdk..\bin
 4.javac<nama file>.java
 5.java<nama file>
+
+2 kaedah kita guna:-
+netbeans dgn notepad
+
+3. create class
+4.create obj , using new operator
+satu file, satu class
+kena ada main() -entry point utk run sesuatu pogram
+-variable -pecah kepada 2 bhg 
+1.primitif (ada 8 -int,double,float, byte,boolean)-semua start huruf kecil
+2.bkn primitive (class-based)-Book b1
+
+Book b1; //non primitive
+int umur; //primitive
+
+
 
 Git Command
 --------------
@@ -12,16 +30,20 @@ cth: git clone https://github.com/mawaddah2009/moh-java.git
 copy dari repo di git hub
 git add*
 git commit - m "first commitkomenla apa2 kat sini"
-git pus
+git push
 
 ==============
 
 
-method yg diguna
+4. method yg diguna
 
 -contructor
--overloading
--over riding
+-overloading- function yg nama sama, tp parameter yg tak sama
+-over riding - ada kaitan dgn inheritance -child akan overide parent
+-final - method yg tak boleh di overide 
+final var (constant) best practice letak hrf besar cth: float PI = 3.14;
+
+static( own by class, shared by all obj) kita dpt dr kelas .Book.info()
 -void - tidak return apa2
 -super()
 
@@ -40,4 +62,17 @@ class KiraGaji-kira()
 AzmanGaji extends KiraGaji
 -kira()
 
+
+5/3/2019
+
+domain name
+favtrainer.com
+
+com.favtrainer.hrm
+
+moh.gov.my
+kena tukar jadi
+my.gov.my.pms
+
+pms.register --->ini kalau nak pakai dlm moh shj
 

@@ -129,6 +129,39 @@ return true;
         return arr;
        
     }
+    
+     
+    public ArrayList search(String title, String desc){
+        ArrayList arr = new ArrayList();
+        //nak query
+        String sql = "SELECT * FROM project WHERE 1 ";
+        if(! title.equals("")){
+            sql += "AND title LIKE '%" + title + "%' ";
+        }
+        
+        
+        if(! desc.equals("")){
+            sql += " AND description LIKE '%" + desc + "%' ";
+        }
+        System.out.println(sql);
+        try {
+            Statement stmt = this.getStmt();
+            ResultSet rs = stmt.executeQuery(sql);
+            while(rs.next()){
+                ProjectModel pro = new ProjectModel();
+                pro.id = rs.getInt("id");
+                   pro.title = rs.getString("title");
+                   pro.description = rs.getString("description");
+                   arr.add(pro);
+            }
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        
+        
+        return arr;
+       
+    }
     public static void main(String[] args){
         ProjectModel p = new ProjectModel();
         p= p.getOne(2);

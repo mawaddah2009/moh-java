@@ -43,6 +43,20 @@ public class Project extends HttpServlet {
     }
      protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+         String search = request.getParameter("search");
+         if (search != null){
+             //search
+             String title = request.getParameter("title");
+             String desc = request.getParameter("description");
+             ProjectModel pro = new ProjectModel();
+             ArrayList list = pro.search(title,desc);
+             request.setAttribute("list", list);
+             request.getRequestDispatcher("project/list.jsp")
+                     .forward(request, response);
+
+         }else {
+         //insert/update
+         
         String title = request.getParameter("title");
         String description = request.getParameter("description");
         //kena baca id jenis string
@@ -59,7 +73,7 @@ public class Project extends HttpServlet {
             pro.update(id2);
         }
         //request.getRequestDispatcher("project/list.jsp").forward(request, response);
-        response.sendRedirect("project");
+        response.sendRedirect("project");}
     }
 }
 

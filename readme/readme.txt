@@ -76,3 +76,44 @@ my.gov.my.pms
 
 pms.register --->ini kalau nak pakai dlm moh shj
 
+
+database===========
+
+1.JDBC (Java Data base connectivity) driver
+
+install JDK add dlm library
+
+6/3/2019
+---------------
+
+servlet
+-tomcat
+-manually or netbeans
+-web.xml
+-webapps/tutorial/WEB-INF
+-classes/HelloWorld.class
+-lib
+mysql.jar
+
+JSP
+-scripted <%.....%>
+EL ${}
+-JSP declaration <%! .....%>
+-<%@page include file ="">
+-<%= print%>
+
+MVC-teknik utk dev sistem atas java
+-guna model (POJO)java class biasa(cth :Student)
+-Controller =Servlet(berfungsi sbg controller)
+-View=JSP (jsp bertindak sbg view)
+
+8/3/19
+
+CRUD
+-create,retrieve,update, delete
+
+CRUD no 2
+-login
+-session
+-dropdown, checkbox,
+
